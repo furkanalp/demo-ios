@@ -8,7 +8,7 @@ steps:
 - task: CocoaPods@0
   displayName: 'CocoaPods install'
   inputs:
-    workingDirectory: 'ios'
+    workingDirectory: 'App'
     forceRepoUpdate: false
     
 - task: Xcode@5
