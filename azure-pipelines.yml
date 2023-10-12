@@ -13,6 +13,7 @@ steps:
     sdk: 'iphoneos'
     xcWorkspacePath: '**/*.xcworkspace'
     packageApp: true
+    signingOption: 'nosign'
 
 - task: CopyFiles@2
   inputs:
