@@ -11,10 +11,8 @@ steps:
     actions: 'build'
     configuration: 'Release'
     sdk: 'iphoneos'
-    xcWorkspacePath: '**/*.xcworkspace' # Update to match the location of your workspace
-    xcodeVersion: 'default' # Options: 10, 11, 12, 13, 14, default, specifyPath
+    xcWorkspacePath: '**/*.xcworkspace'
     packageApp: true
-    signingOption: 'manual'
 
 - task: CopyFiles@2
   inputs:
