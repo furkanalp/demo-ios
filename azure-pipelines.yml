@@ -8,7 +8,7 @@ steps:
 - task: InstallAppleCertificate@2
   inputs:
     certSecureFile: 'distribution.p12'
-    certPwd: '$(certPass)'
+    certPwd: '$(newpass)'
     keychain: 'temp'
     deleteCert: true
 - task: InstallAppleProvisioningProfile@1
