@@ -8,17 +8,17 @@ steps:
 - task: InstallAppleCertificate@2
   inputs:
     certSecureFile: 'distribution.p12'
-    certPwd: '$(CERTPASS)'
+    certPwd: '$(certPass)'
     keychain: 'temp'
     deleteCert: true
 - task: InstallAppleProvisioningProfile@1
   inputs:
     provisioningProfileLocation: 'secureFiles'
-    provProfileSecureFile: '$(PROVISIONINGFILENAME)'
+    provProfileSecureFile: '$(provisioningFilename)'
     removeProfile: true
 - task: DownloadSecureFile@1
   inputs:
-    secureFile: '$(PROVISIONINGFILENAME)'
+    secureFile: '$(provisioningFilename)'
 - task: Xcode@5
   inputs:
     actions: 'build'
