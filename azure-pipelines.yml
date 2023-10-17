@@ -5,21 +5,37 @@ pool:
   vmImage: 'macOS-12'
 
 steps:
-
+- task: InstallAppleCertificate@2
+  inputs:
+    certSecureFile: 'distribution.p12'
+    certPwd: '$(CERTPASS)'
+    keychain: 'temp'
+    deleteCert: true
+- task: InstallAppleProvisioningProfile@1
+  inputs:
+    provisioningProfileLocation: 'secureFiles'
+    provProfileSecureFile: '$(PROVISIONINGFILENAME)'
+    removeProfile: true
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: '$(PROVISIONINGFILENAME)'
 - task: Xcode@5
   inputs:
     actions: 'build'
     configuration: 'Release'
     sdk: 'iphoneos'
-    xcWorkspacePath: '**/*.xcworkspace'
+    xcWorkspacePath: '**/App.xcworkspace'
+    scheme: 'App'
     packageApp: true
-    signingOption: 'nosign'
+    signingOption: 'manual'
+    provisioningProfileUuid: 'f5b123a4-53ee-496b-b0e4-a9b7cc04c8a5'
+    provisioningProfileName: 'Datasphere distribution profile'
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)/App'
-    Contents: '**/*'
+    Contents: '**/*.ipa'
     targetFolder: '$(build.artifactStagingDirectory)'
+    overWrite: true
      
 - task: PublishBuildArtifacts@1
   inputs:
