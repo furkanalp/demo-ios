@@ -29,7 +29,7 @@ steps:
 
 - task: Xcode@5
   inputs:
-    actions: 'test'
+    actions: 'analyze'
     configuration: 'Release'
     sdk: 'iphoneos'
     xcWorkspacePath: 'ios/App/App.xcworkspace'
