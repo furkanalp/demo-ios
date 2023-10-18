@@ -26,7 +26,10 @@ steps:
   inputs:
     workingDirectory: 'ios/App'
     forceRepoUpdate: false
-
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'chmod -R +x $(System.DefaultWorkingDirectory)'
 - task: Xcode@5
   inputs:
     actions: 'analyze'
