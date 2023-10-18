@@ -35,9 +35,7 @@ steps:
     xcWorkspacePath: 'ios/App/App.xcworkspace'
     scheme: 'App'
     packageApp: true
-    signingOption: 'manual'
-    provisioningProfileUuid: 'f5b123a4-53ee-496b-b0e4-a9b7cc04c8a5'
-    provisioningProfileName: 'Datasphere distribution profile'
+    signingOption: 'default'
 
 - task: CopyFiles@2
   inputs:
