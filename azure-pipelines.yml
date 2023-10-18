@@ -1,0 +1,66 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'macOS-latest'
+
+steps:
+- task: InstallAppleCertificate@2
+  inputs:
+    certSecureFile: 'distribution.p12'
+    certPwd: '$(certPass)'
+    keychain: 'temp'
+    deleteCert: true
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: '$(provisioningname)'
+        
+- task: InstallAppleProvisioningProfile@1
+  inputs:
+    provisioningProfileLocation: 'secureFiles'
+    provProfileSecureFile: '$(provisioningname)'
+    removeProfile: true
+
+- task: CocoaPods@0
+  displayName: 'CocoaPods install'
+  inputs:
+    workingDirectory: 'App'
+    forceRepoUpdate: false
+
+- task: Xcode@5
+  inputs:
+    actions: 'build'
+    configuration: 'Release'
+    sdk: 'iphoneos'
+    xcWorkspacePath: '**/App.xcworkspace'
+    scheme: 'App'
+    packageApp: true
+    signingOption: 'manual'
+    provisioningProfileUuid: 'f5b123a4-53ee-496b-b0e4-a9b7cc04c8a5'
+    provisioningProfileName: 'Datasphere distribution profile'
+
+- task: CopyFiles@2
+  inputs:
+    Contents: '**/*.ipa'
+    targetFolder: '$(build.artifactStagingDirectory)'
+    overWrite: true
+     
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: 'gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt'
+
+- task: DownloadBuildArtifacts@0 # downloads a single build artifact named 'drop' from the current build and places it in the directory specified by $(System.ArtifactsDirectory).
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: 'drop'
+    downloadPath: '$(System.ArtifactsDirectory)'   
+
+
