@@ -11,14 +11,16 @@ steps:
     certPwd: '$(certPass)'
     keychain: 'temp'
     deleteCert: true
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: '$(provisioningname)'
+        
 - task: InstallAppleProvisioningProfile@1
   inputs:
     provisioningProfileLocation: 'secureFiles'
-    provProfileSecureFile: '$(provisioningFilename)'
+    provProfileSecureFile: '$(provisioningname)'
     removeProfile: true
-- task: DownloadSecureFile@1
-  inputs:
-    secureFile: '$(provisioningFilename)'
+
 
 - task: Xcode@5
   inputs:
