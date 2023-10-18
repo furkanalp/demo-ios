@@ -21,6 +21,11 @@ steps:
     provProfileSecureFile: '$(provisioningname)'
     removeProfile: true
 
+- task: CocoaPods@0
+  displayName: 'CocoaPods install'
+  inputs:
+    workingDirectory: 'App'
+    forceRepoUpdate: false
 
 - task: Xcode@5
   inputs:
