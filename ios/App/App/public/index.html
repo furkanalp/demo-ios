@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Datasphere Basic App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script src="index.js" type="module"></script>
+    <link class="font" href="ki-fontawesome-sharp/css/fontawesome.min.css" id="fontawesome" rel="stylesheet" type="text/css" />
+    <link class="font" href="ki-fontawesome-sharp/css/sharp-regular.min.css" id="fontawesome-sharp-regular" rel="stylesheet" type="text/css" />
+    <link class="font" href="ki-fontawesome-sharp/css/sharp-solid.min.css" id="fontawesome-sharp-solid" rel="stylesheet" type="text/css" />
+    <link class="font" href="ki-hmticons/css/external-min.css" id="hmticons" rel="stylesheet" />
+    <link id="theme" href="" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        @font-face {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-style: normal;
+        src: url('static/fonts/Roboto-Regular.ttf');
+        }
+        * {
+            font-family: Roboto, Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+        }
+        input::placeholder{
+            font-family: Roboto, Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+        }
+
+        html, body {
+            background: var(--theme-color-neutral);
+            color: var(--theme-font-color);
+            font-size: 14px;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+            width: 100%;
+            --theme-color-neutral: #FFFFFF;
+            --theme-color-main-100: #1979CE;
+            --theme-color-main-140: #1e75c2;
+            --theme-color-main-80: #4178A7;
+            --theme-color-light-100: #3f86cd;
+            --theme-red-100: #D30535;
+            overflow: hidden hidden;
+        }
+
+        form.validated input:invalid,
+        form.validated textarea:invalid { border: 2px solid var(--theme-red-100); }
+
+        .wrapper {
+            height: 100%;
+            width: 100%;
+        }
+
+        .wrapper * {
+            display: none;
+        }
+
+        .toast-stack {
+            /*margin-top: 25px;
+            padding: 0 55px 0 30px;*/
+            left: 50%;
+            position: absolute;
+            top: 0.5em;
+            transform: translateX(-50%);
+            z-index: 11;
+            width: 85vw;
+        }
+    </style>
+    <script type="application/javascript" src="moment/min/moment-with-locales.min.js"></script>
+    <script type="application/javascript" src="moment-timezone/builds/moment-timezone-with-data.js"></script>
+    <script type="application/javascript">
+        var portalConfig = {
+            //"portalApplicationsUrl": location.origin + '/applicationsP3/',
+            //"portalBaseUrl": location.origin + '/KiWebPortalP3/rest/',
+            "portalApplicationsUrl": 'http://APP.URL/',
+            "portalBaseUrl": 'http://BASE.URL/',
+            "portalLanguage": "en",
+        };
+        window.hooksRegistry = {};
+        window.openPopupRegistry = [];
+    </script>
+</head>
+<body>
+    <div class="toast-stack"></div>
+    <index-view></index-view>
+</body>
+</html>

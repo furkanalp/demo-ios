@@ -1,0 +1,16 @@
+{
+	"success": "Success",
+	"close": "Close",
+	"no": "No",
+	"yes": "Yes",
+    "basicView": "Template View",
+	"Error": "Error",
+	"notFound": "Server not found",
+	"email": "Email",
+	"password": "Password",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "address": "Address",
+	"phoneNumber": "Telephone",
+	"required": "Required field"
+}

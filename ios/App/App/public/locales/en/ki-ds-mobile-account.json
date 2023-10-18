@@ -1,0 +1,13 @@
+{
+    "names": "NAMES",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "general": "GENERAL",
+    "address": "Address",
+    "telephone": "Telephone",
+    "account": "ACCOUNT",
+    "settings": "SETTINGS",
+    "timeZone": "Time Zone",
+    "language": "Language",
+    "edit": "Edit"
+}

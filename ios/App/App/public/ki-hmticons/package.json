@@ -1,0 +1,30 @@
+{
+  "name": "ki-hmticons",
+  "description": "KISTERS HMT Iconset",
+  "main": "",
+  "author": "",
+  "version": "1.2.1",
+  "files": [
+    "*.md",
+    "css/*",
+    "*.html",
+    "icons/*"
+  ],
+  "scripts": {
+    "clean": "del-cli --force dist && make-dir dist",
+    "package": "npm run clean && npm run zip && node node_modules/portal-base/scripts/UploadPackages.js",
+    "release": "npx standard-version && git push --follow-tags origin master",
+    "minor-release": "npx standard-version --release-as minor && git push --follow-tags origin master",
+    "pre-release": "npx standard-version -a --prerelease && git push --follow-tags origin master",
+    "zip": "bestzip dist/ki-hmticons.zip css/* icons/* package.json"
+  },
+  "devDependencies": {
+    "bestzip": "^2.2.1",
+    "del-cli": "^5.0.0",
+    "make-dir-cli": "^3.0.0",
+    "portal-base": "^0.44.0"
+  },
+  "standard-version": {
+    "postbump": "node node_modules/portal-base/scripts/UpdatePortalBaseVersion.js"
+  }
+}

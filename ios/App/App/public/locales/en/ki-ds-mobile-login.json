@@ -1,0 +1,18 @@
+{
+	"login": "Login",
+	"signIn": "Sign in",
+	"logout": "Logout",
+	"eu": "Europe",
+	"na": "North America",
+	"ap": "Asia Pacific",
+	"selectRegion": "First, select your region",
+	"enterCredentials": "Next, enter your credentials",
+	"emailPlaceholder": "Your email",
+	"passwordPlaceholder": "Your password",
+	"forgotPassword": "Forgot password?",
+	"invalidCredentials": "Invalid credentials",
+	"enterEmail": "Next, enter your email",
+	"backToLogin": "Back to login",
+	"resetPassword": "Reset password",
+	"successResetToken": "Password reset email was sent. Please check your inbox."
+}

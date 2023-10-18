@@ -1,0 +1,14 @@
+{
+	"editPassword": "Edit Password",
+	"oldPassword": "Old password",
+	"newPassword": "New password",
+	"repeatPassword": "Confirm new password",
+	"repeatPasswordValidation": "Both entered passwords must match",
+	"failedLengthValidation": "The input must be between {{minLength}} and {{maxLength}} characters",
+    "failedNumbersValidation": "At least one number is required",
+    "failedCharactersValidation": "At least one character is required",
+    "failedLowerCaseValidation": "At least one character in lower case is required",
+    "failedUpperCaseValidation": "At least one character in upper case is required",
+    "failedSpecialCharsListValidation": "The special characters allowed are {{allowedSpecialCharacters}}",
+    "failedSpecialCharsValidation": "At least one special character is required"
+}

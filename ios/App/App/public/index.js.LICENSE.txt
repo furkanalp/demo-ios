@@ -1,0 +1,352 @@
+/*!
+ * Quill Editor v1.3.6
+ * https://quilljs.com/
+ * Copyright (c) 2014, Jason Chen
+ * Copyright (c) 2013, salesforce.com
+ */
+
+/*! Capacitor: https://capacitorjs.com/ - MIT License */
+
+/**
+ * @fileoverview
+ * @suppress {checkPrototypalTypes}
+ * @license Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+ * This code may only be used under the BSD style license found at
+ * http://polymer.github.io/LICENSE.txt The complete set of authors may be found
+ * at http://polymer.github.io/AUTHORS.txt The complete set of contributors may
+ * be found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by
+ * Google as part of the polymer project is also subject to an additional IP
+ * rights grant found at http://polymer.github.io/PATENTS.txt
+ */
+
+/**
+ * @license
+ * Copyright (c) 2000 - 2023 Vaadin Ltd.
+ *
+ * This program is available under Vaadin Commercial License and Service Terms.
+ *
+ *
+ * See https://vaadin.com/commercial-license-and-service-terms for the full
+ * license.
+ */
+
+/**
+ * @license
+ * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+ * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+ * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+ * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+ * Code distributed by Google as part of the polymer project is also
+ * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+ */
+
+/**
+ * @license
+ * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+ * This code may only be used under the BSD style license found at
+ * http://polymer.github.io/LICENSE.txt
+ * The complete set of authors may be found at
+ * http://polymer.github.io/AUTHORS.txt
+ * The complete set of contributors may be found at
+ * http://polymer.github.io/CONTRIBUTORS.txt
+ * Code distributed by Google as part of the polymer project is also
+ * subject to an additional IP rights grant found at
+ * http://polymer.github.io/PATENTS.txt
+ */
+
+/**
+ * @license
+ * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+ * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+ * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+ * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+ * Code distributed by Google as part of the polymer project is also
+ * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+/**
+ * @license
+ * Lodash <https://lodash.com/>
+ * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+
+/**
+ * @license Highcharts
+ *
+ * (c) 2009-2016 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/highcharts-3d
+ * @requires highcharts
+ *
+ * 3D features for Highcharts JS
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/highcharts-more
+ * @requires highcharts
+ *
+ * (c) 2009-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/accessibility
+ * @requires highcharts
+ *
+ * Accessibility module
+ *
+ * (c) 2010-2021 Highsoft AS
+ * Author: Oystein Moseng
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/broken-axis
+ * @requires highcharts
+ *
+ * (c) 2009-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/bullet
+ * @requires highcharts
+ *
+ * Bullet graph series type for Highcharts
+ *
+ * (c) 2010-2021 Kacper Madej
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/data
+ * @requires highcharts
+ *
+ * Data module
+ *
+ * (c) 2012-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/drilldown
+ * @requires highcharts
+ *
+ * Highcharts Drilldown module
+ *
+ * Author: Torstein Honsi
+ * License: www.highcharts.com/license
+ *
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/exporting
+ * @requires highcharts
+ *
+ * Exporting module
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/funnel
+ * @requires highcharts
+ *
+ * Highcharts funnel module
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/no-data-to-display
+ * @requires highcharts
+ *
+ * Plugin for displaying a message when there is no data visible in chart.
+ *
+ * (c) 2010-2021 Highsoft AS
+ * Author: Oystein Moseng
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/sankey
+ * @requires highcharts
+ *
+ * Sankey diagram module
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/solid-gauge
+ * @requires highcharts
+ * @requires highcharts/highcharts-more
+ *
+ * Solid angular gauge module
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/timeline
+ * @requires highcharts
+ *
+ * Timeline series
+ *
+ * (c) 2010-2021 Highsoft AS
+ * Author: Daniel Studencki
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/treemap
+ * @requires highcharts
+ *
+ * (c) 2014-2021 Highsoft AS
+ * Authors: Jon Arild Nygard / Oystein Moseng
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/xrange
+ * @requires highcharts
+ *
+ * X-range series
+ *
+ * (c) 2010-2021 Torstein Honsi, Lars A. V. Cabrera
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highcharts JS v9.2.2 (2021-08-24)
+ * Organization chart series type
+ * @module highcharts/modules/organization
+ * @requires highcharts
+ * @requires highcharts/modules/sankey
+ *
+ * (c) 2019-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highmaps JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/heatmap
+ * @requires highcharts
+ *
+ * (c) 2009-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highstock JS v9.2.2 (2021-08-24)
+ * @module highcharts/highstock
+ *
+ * (c) 2009-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+ * @license Highstock JS v9.2.2 (2021-08-24)
+ * @module highcharts/modules/stock
+ * @requires highcharts
+ *
+ * Highcharts Stock as a plugin for Highcharts
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+/**
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at
+http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
+http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
+found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
+part of the polymer project is also subject to an additional IP rights grant
+found at http://polymer.github.io/PATENTS.txt
+*/
+
+/**
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+/**
+@license
+Copyright (c) 2019 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at
+http://polymer.github.io/LICENSE.txt The complete set of authors may be found at
+http://polymer.github.io/AUTHORS.txt The complete set of contributors may be
+found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
+part of the polymer project is also subject to an additional IP rights grant
+found at http://polymer.github.io/PATENTS.txt
+*/

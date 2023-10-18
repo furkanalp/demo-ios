@@ -1,0 +1,10 @@
+{
+	"editAccount": "Edit Account",
+	"noPhone": "No telephone number given",
+    "noMobilePhone": "The phone number must be a mobile phone",
+	"invalidPhone": "Invalid phone number",
+	"required": "This field is required",
+	"tooLong": "The number supplied is too long to be a phone number",
+    "tooShort": "The number supplied is too short to be a phone number",
+	"countryCode": "Invalid country calling code"
+}
