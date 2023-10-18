@@ -24,7 +24,7 @@ steps:
 - task: CocoaPods@0
   displayName: 'CocoaPods install'
   inputs:
-    workingDirectory: 'App'
+    workingDirectory: 'ios/App'
     forceRepoUpdate: false
 
 - task: Xcode@5
@@ -32,7 +32,7 @@ steps:
     actions: 'build'
     configuration: 'Release'
     sdk: 'iphoneos'
-    xcWorkspacePath: '**/App.xcworkspace'
+    xcWorkspacePath: 'ios/App/App.xcworkspace'
     scheme: 'App'
     packageApp: true
     signingOption: 'manual'
