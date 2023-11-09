@@ -26,21 +26,6 @@ steps:
   inputs:
     workingDirectory: 'ios/App'
     forceRepoUpdate: false
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'chmod -R +x $(System.DefaultWorkingDirectory)'
-- task: Xcode@5
-  inputs:
-    actions: 'analyze'
-    configuration: 'Release'
-    sdk: 'iphoneos'
-    xcWorkspacePath: 'ios/App/App.xcworkspace'
-    scheme: 'App'
-    packageApp: false
-    signingOption: 'manual'
-    provisioningProfileUuid: 'f5b123a4-53ee-496b-b0e4-a9b7cc04c8a5'
-    provisioningProfileName: 'Datasphere distribution profile'
 
 - task: Xcode@5
   inputs:
@@ -53,6 +38,7 @@ steps:
     signingOption: 'manual'
     provisioningProfileUuid: 'f5b123a4-53ee-496b-b0e4-a9b7cc04c8a5'
     provisioningProfileName: 'Datasphere distribution profile'
+    signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
 
 
 - task: CopyFiles@2
