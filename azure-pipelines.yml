@@ -11,6 +11,7 @@ steps:
     certPwd: '$(certPass)'
     keychain: 'temp'
     deleteCert: true
+
 - task: DownloadSecureFile@1
   inputs:
     secureFile: '$(provisioningname)'
@@ -70,12 +71,12 @@ steps:
     authType: 'UserAndPass'
     username: 'yannick.muntz@kisters.de'
     password: '$(password)'
+    isTwoFactorAuth: true
+    appSpecificPassword: '$(specific_pass)'
     releaseTrack: 'TestFlight'
     appIdentifier: 'de.kisters.datasphere.mobile'
     appType: 'iOS'
     ipaPath: '$(System.DefaultWorkingDirectory)/**/*.ipa'
     shouldSkipWaitingForProcessing: true
     shouldSkipSubmission: true
-
-
 
