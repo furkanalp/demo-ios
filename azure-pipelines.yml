@@ -73,7 +73,7 @@ steps:
     releaseTrack: 'TestFlight'
     appIdentifier: 'de.kisters.datasphere.mobile'
     appType: 'iOS'
-    ipaPath: '$(System.ArtifactsDirectory)/**/*.ipa'
+    ipaPath: '$(System.ArtifactsDirectory)/**/App.ipa'
     shouldSkipWaitingForProcessing: true
     shouldSkipSubmission: true
 
