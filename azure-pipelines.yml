@@ -67,7 +67,9 @@ steps:
 
 - task: AppStoreRelease@1
   inputs:
-    serviceEndpoint: 'appleStoreServiceConnection'
+    authType: 'UserAndPass'
+    username: 'yannick.muntz@kisters.de'
+    password: '$(password)'
     releaseTrack: 'TestFlight'
     appIdentifier: 'de.kisters.datasphere.mobile'
     appType: 'iOS'
