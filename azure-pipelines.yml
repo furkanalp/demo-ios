@@ -24,7 +24,7 @@ steps:
 
 - task: ios-bundle-version@1
   inputs:
-    sourcePath: 'ios/App/App /Info.plist'
+    sourcePath: 'ios/App/App/Info.plist'
     versionCodeOption: 'buildid'
     versionCode: '$(Build.BuildId)'
     printFile: true
