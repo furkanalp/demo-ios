@@ -79,4 +79,5 @@ steps:
     ipaPath: '$(System.DefaultWorkingDirectory)/**/*.ipa'
     shouldSkipWaitingForProcessing: true
     shouldSkipSubmission: true
+    appSpecificId: '6469513820'
 
