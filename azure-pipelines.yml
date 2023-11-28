@@ -73,13 +73,16 @@ steps:
     artifactName: 'drop'
     downloadPath: '$(System.ArtifactsDirectory)'
 
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: '$(apikeyidbase)'
+    
 - task: AppStoreRelease@1
   inputs:
-    authType: 'UserAndPass'
-    username: 'yannick.muntz@kisters.de'
-    password: '$(password)'
-    isTwoFactorAuth: true
-    appSpecificPassword: '$(specific_pass)'
+    authType: 'ApiKey'
+    apiKeyId: '$(keyid)'
+    apiKeyIssuerId: '$(issuerid)'
+    apitoken: '$(apikeyidbase)'
     releaseTrack: 'TestFlight'
     appIdentifier: 'de.kisters.datasphere.mobile'
     appType: 'iOS'
@@ -87,4 +90,5 @@ steps:
     shouldSkipWaitingForProcessing: true
     shouldSkipSubmission: true
     appSpecificId: '6469513820'
+
 
