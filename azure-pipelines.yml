@@ -73,12 +73,16 @@ steps:
     artifactName: 'drop'
     downloadPath: '$(System.ArtifactsDirectory)'
     
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: '$(apikeyid)'
+
 - task: AppStoreRelease@1
   inputs:
     authType: 'ApiKey'
     apiKeyId: '$(keyid)'
     apiKeyIssuerId: '$(issuerid)'
-    apitoken: 'LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JR1RBZ0VBTUJNR0J5cUdTTTQ5QWdFR0NDcUdTTTQ5QXdFSEJIa3dkd0lCQVFRZ2MwbW5xc0I3eVFhd2MwckkKTEtOaGgzNlVKVkdQVVhNaVIyNHNDZTVtQTFHZ0NnWUlLb1pJemowREFRZWhSQU5DQUFRYkxKZGVYZXJwdU9qSgpIWkt5OTJKZXgrMlZTTEU2VGlTYUIrcW50OHRNSDJldHZkMzZCQlNsU3UrN3NDVlFlVnhTRlJGbnFBclRLaUtzClZ0YkF6Z1lXCi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0='
+    apitoken: '$(apikeyid)'
     releaseTrack: 'TestFlight'
     appIdentifier: 'de.kisters.datasphere.mobile'
     appType: 'iOS'
